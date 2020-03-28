@@ -1,0 +1,147 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.attribution {
+    font-size: 8px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #3e52a3;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 375px) {
+    .header {
+        padding: 0 20px 20px;
+        text-align: center;
+    }
+
+    .header__title, .main__title {
+        color: #4c4e61;
+    }
+    
+    .header__text, .main__text {
+        color: #a3a5ae;
+    }
+
+    .header__title {
+        font-size: 24px;
+    }
+
+    .header__title--unbold {
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+    .header__text {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__card {
+        width: 280px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 14px #a3a5ae;
+        margin: 26px 8px;
+        padding: 20px 25px;
+        text-align: right;
+    }
+
+    .main__card--cyan {
+        border-top: 8px solid hsl(180, 62%, 55%);
+    }
+    
+    .main__card--red {
+        border-top: 8px solid hsl(0, 78%, 62%);
+    }
+    
+    .main__card--orange {
+        border-top: 8px solid hsl(34, 97%, 64%);
+    }
+    
+    .main__card--blue {
+        border-top: 8px solid hsl(212, 86%, 64%);
+    }    
+        
+    .main__title, .main__text {
+        text-align: left;
+    }
+
+    .main__title {
+        font-size: 22px;
+    }
+        
+    .main__text {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header__title, .header__title--unbold {
+        font-size: 28px;
+    }
+
+    .main__card {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header__title, .header__title--unbold {
+        font-size: 36px;
+    }
+
+    .header__text {
+        width: 36%;
+        margin: 0 auto;
+    }
+
+    .main {
+        position: relative;
+        width: 1300px;
+        height: 650px;
+        margin: 60px auto;
+    }
+
+    .main__card {
+        width: 360px;
+    }
+
+    .main__card--cyan {
+        position: absolute;
+        left: 0;
+        top: 30%;
+    }
+    
+    .main__card--red {
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+    }
+    
+    .main__card--orange {
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+
+    .main__card--blue {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
